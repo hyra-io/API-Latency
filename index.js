@@ -5,6 +5,8 @@ const metricId = "rf18wdqckhc9";
 
 const path = "https://api.hyra.io";
 
+require("dotenv").config();
+
 const checkApi = () => {
     const start = new Date().getTime();
     axios.get(path).then(response => {
