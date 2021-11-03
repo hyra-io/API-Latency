@@ -24,7 +24,7 @@ const checkApi = () => {
                     Authorization: "OAuth " + process.env.API_KEY
                 }
             }).then(result => {
-                console.log('All went well');
+                console.log('All went well with latency of ' + latency);
                 setTimeout(() => {
                     checkApi();
                 }, 30 * 1000)
